@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        .car__contour {
+        height: 130px;   
+           width: 220px;
+           margin: 25px auto -70px auto;
+           border: 10px solid burlywood;
+           border-radius: 220px / 130px;
+           position: relative;
+        }
+        .car__body {
+            width: 340px;
+            height: 80px ;
+            background: burlywood;
+            border-radius: 30px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .car__wheel {
+            position: absolute;
+            bottom: 0px ;
+            left: 15px;
+            background: black;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+        .car__wheell {
+            position: absolute;
+            bottom: 0px ;
+            left: 250px;
+            background: black;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+        @keyframes moveRight{
+            from{
+                left: -300px;
+            }
+            to{
+                left:30%;
+            }
+            
+        }
+        .moving-element {
+        left: -300px;
+        animation: moveRight 10s linear infinite;
+    }
+
+        
+    </style>
+</head>
+<body>
+<div class="car__contour moving-element"> </div>
+<div class="car__body moving-element">
+    <div class="car__wheel"></div>
+    <div class="car__wheell"></div>
+</div>
+
+</body>
+</html>
